@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #38b6ff;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+       
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #38b6ff;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Galeri Foto Kelompok 5</h1>
+        <p>Kumpulan foto random</p>
+    </header>
+
+    <main class="gallery">
+        <div class="gallery-item">
+            <img src="foto berlima.jpeg" alt="Foto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="pc artha.jpeg" alt="Foto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="pc hilal.jpeg" alt="Foto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="pc joice.jpeg" alt="Foto 4">
+        </div>
+        <div class="gallery-item">
+            <img src="pc nurna.jpeg" alt="Foto 5">
+        </div>
+        <div class="gallery-item">
+            <img src="pc luthfi.jpeg" alt="Foto 6">
+        </div>
+    </main>
+
+    <footer>
+        <p>© Galeri Foto Kelompok 5</p>
+    </footer>
+
+</body>
+</html>
